@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Square from "../Square";
 import RestartButton from "../RestartButton";
+import Result from "../Result";
 
 const getRandomSquare = () => {
   return Math.floor(Math.random() * 3) + 1;
@@ -38,7 +39,12 @@ const Container = () => {
           clickFunction={selectSquare}
         />
       ))}
-      {selectedSquare !== null && <RestartButton clickFunction={restartGame} />}
+      {selectedSquare !== null && (
+        <>
+          <Result result={selectedSquare === correctSquare ? "You won!" : "You lost!"} />
+          <RestartButton clickFunction={restartGame} />
+        </>
+      )}
     </>
   );
 };

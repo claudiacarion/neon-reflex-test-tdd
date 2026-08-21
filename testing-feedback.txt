@@ -1,0 +1,7 @@
+Feedback on Tests
+
+The tests covered all of the functionality and they are were easy to understand and follow.
+If I had to add one more test, it would be to test that the restart button disappears after the game is reset,
+since you test that the result message is gone and the squared are enabled.
+But since the other tests you have written kind of already tests that it is reset, it's not 100% necessary,
+just something that could be added to guarantee it is returned to initial state.

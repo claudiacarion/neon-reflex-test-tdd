@@ -4,7 +4,7 @@ type SubtitleProp = {
 
 const Subtitle = ({text}: SubtitleProp) => {
   return (
-    <h2>{text}</h2>
+    <h2 className='font-mono'>{text}</h2>
   )
 }
 

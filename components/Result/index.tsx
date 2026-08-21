@@ -3,7 +3,7 @@ type ResultProp = {
 };
 
 const Result = ({ result }: ResultProp) => {
-  return <>{result}</>;
+  return <h3 className='font-mono my-6'>{result}</h3>;
 };
 
 export default Result;

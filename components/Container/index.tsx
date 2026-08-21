@@ -28,24 +28,26 @@ const Container = () => {
   };
 
   return (
-    <>
-      {squareIds.map(id => (
-        <Square
-          key={id}
-          id={id}
-          isCorrect={id === correctSquare}
-          isSelected={id === selectedSquare}
-          gameFinished={gameFinished}
-          clickFunction={selectSquare}
-        />
-      ))}
+    <div className='flex flex-col justify-center text-center md:w-3xl mx-auto'>
+      <div className='flex flex-col md:flex-row justify-center items-center gap-4'>
+        {squareIds.map(id => (
+          <Square
+            key={id}
+            id={id}
+            isCorrect={id === correctSquare}
+            isSelected={id === selectedSquare}
+            gameFinished={gameFinished}
+            clickFunction={selectSquare}
+          />
+        ))}
+      </div>
       {selectedSquare !== null && (
         <>
           <Result result={selectedSquare === correctSquare ? "You won!" : "You lost!"} />
           <RestartButton clickFunction={restartGame} />
         </>
       )}
-    </>
+    </div>
   );
 };
 

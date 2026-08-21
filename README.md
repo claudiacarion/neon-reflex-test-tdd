@@ -1,6 +1,9 @@
 # Neon Reflex
 
-## Application Proposal
+This app was developed following a Test Driven Development (TDD) process. The tests were created by a fellow student, and the app was then built based on the requirements and expected behavior defined by those tests. Each test suite was implemented and passed, with the final product including styling based on the proposed design.
+
+
+## Application Proposal 
 
 Neon Reflex is a simple single-page guessing game built with Next.js and TypeScript.
 
